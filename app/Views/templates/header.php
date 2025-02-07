@@ -1,6 +1,5 @@
 <?php
 // app/Views/templates/header.php
-// Start the session if it hasn't been started already.
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -15,15 +14,21 @@ if (session_status() === PHP_SESSION_NONE) {
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body style="background-color: #FF8C00; color: white;">
-  <!-- Responsive Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFB347;">
     <a class="navbar-brand text-white" href="/">Productivity App</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
+        <!-- Font Size Adjustment Buttons -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" id="increase-font">A+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" id="decrease-font">A-</a>
+        </li>
         <?php if (isset($_SESSION['user_id'])): ?>
           <li class="nav-item">
             <a class="nav-link text-white" href="/logout">Logout</a>
