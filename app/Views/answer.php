@@ -49,7 +49,7 @@
           <div class="form-group">
             <label for="answer">Your Answer:</label>
             <!-- Use Bootstrap's form-control with background and text utility classes -->
-            <textarea class="form-control bg-light text-white" id="answer" name="answer" rows="5"></textarea>
+            <textarea class="form-control bg-dark text-white" id="answer" name="answer" rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit Answer</button>
           <a href="/tip/<?php echo $tip->id; ?>?action=show" class="btn btn-light">Show Answer</a>
