@@ -1,0 +1,34 @@
+/* public/css/style.css */
+body {
+    background-color: #FF8C00; /* dark orange */
+    color: white;
+}
+
+.navbar {
+    background-color: #FFB347; /* light orange */
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+/* Remove generic .card styling to avoid conflicts with Bootstrap. */
+/* Instead, define a custom card style: */
+.custom-card {
+    background-color: #000000; /* black */
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Optional: Style for your buttons if needed */
+.btn-answer {
+    background-color: #FFB347;
+    border: none;
+    color: white;
+}
+
+/* Optional: Override Bootstrap card text if needed */
+.custom-card .card-body,
+.custom-card .card-footer {
+    color: white;
+}

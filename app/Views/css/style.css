@@ -1,0 +1,29 @@
+/* public/css/style.css */
+body {
+    background-color: #FF8C00; /* dark orange */
+    color: white;
+}
+
+.navbar {
+    background-color: #FFB347; /* light orange */
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.card {
+    background-color: #000000; /* black */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.answer-field {
+    background-color: black;
+    color: white;
+}
+
+/* Optional: Style for navbar links */
+.navbar-nav .nav-link {
+    color: white !important;
+}
